@@ -30,15 +30,16 @@ Relevant parameters of the evaluation are as follows:
 
 The datasets are in [H5](http://www.h5py.org/) format and contain the following structure:  
 
-- **id**: The index of the measurement in the evaluation.  
-- **glitch**: A 1000-sample trace of the Vcap signal during the glitch injection window.  
-- **clk**: A 1000-sample trace of the clock signal during the glitch injection window.  
-- **glitch voltage**  (V): The voltage of the glitch pulse for its duration.  
-- **duration** (ns): The width of the injected voltage glitch.  
-- **delay** (ns): The offset between the trigger event and the glitch injection.  
-- **power**: The power of the injected glitch.  
-- **data**: The received feedback message consisting of a ciphertext block.  
-- **verdict**: Labels assigned to the received data based on system behavior, such as:
+- **signal_glitch**: A 1000-sample trace of the Vcap signal during the glitch injection window.  
+- **signal_clk**: A 1000-sample trace of the clock signal during the glitch injection window.  
+  
+- **glitch_id**: The index of the measurement in the evaluation.  
+- **glitch_voltage**  (V): The voltage of the glitch pulse for its duration.  
+- **glitch_duration** (ns): The width of the injected voltage glitch.  
+- **glitch_delay** (ns): The offset between the trigger event and the glitch injection.  
+- **glitch_power**: The power of the injected glitch.  
+- **glitch_received_ciphertext**: The received feedback message consisting of a ciphertext block.  
+- **glitch_verdict**: Labels assigned to the received data based on system behavior, such as:
   - 3 for expected
   - 4 for faulty
   - 5 for mute
