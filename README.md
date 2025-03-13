@@ -17,7 +17,7 @@ Relevant parameters of the evaluation are as follows:
 
 | **Parameter**             | **16 MHz**    | **32 MHz**    | **50 MHz**    |
 |---------------------------|---------------|---------------|---------------|
-| **Total measurements**    | 567,000       | 21,252        | 21,252        |
+| **Total measurements**    | 56,7000       | 21,252        | 21,252        |
 | **AES Attack Window**     | 169 µs        | 93 µs         | 59 µs         |
 | **Sample Rate**           | 500 MS/s      | 1 GS/s        | 1 GS/s        |
 | **Trace Samples**         | 1,000         | 1,000         | 1,000         |
